@@ -1,0 +1,31 @@
+{
+  "name": "sukoon-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Sukoon — live Indian mutual fund data, NAV history, risk metrics, and screening via Claude",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "sukoon-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "files": ["dist", "README.md"],
+  "keywords": ["mcp", "mutual-funds", "india", "finance", "amfi", "claude", "sukoon"],
+  "license": "MIT",
+  "homepage": "https://sukoon.money",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AskMinto/sukoon-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": { "node": ">=18" }
+}
