@@ -1,8 +1,9 @@
-# Sukoon MCP
-
-**Indian mutual fund data for Claude.** 17 tools covering 14,000+ AMFI schemes, 20 years of daily NAV, risk metrics, holdings, benchmarks, and SIF strategies.
-
-**[sukoon.money](https://sukoon.money)** — no signup, no API key, free for individuals.
+<div align="center">
+  <img src="assets/sukoon-logo.png" alt="Sukoon" width="64"/>
+  <h1>Sukoon MCP</h1>
+  <p><strong>Indian mutual fund data for Claude.</strong> 17 tools covering 14,000+ AMFI schemes, 20 years of daily NAV, risk metrics, holdings, benchmarks, and SIF strategies.</p>
+  <p><a href="https://sukoon.money">sukoon.money</a> &nbsp;·&nbsp; No signup &nbsp;·&nbsp; No API key &nbsp;·&nbsp; Free for individuals</p>
+</div>
 
 ---
 
@@ -12,7 +13,7 @@
 2. Paste the URL: `https://mcp.sukoon.money/mcp`
 3. Set auth to **None**, click Connect
 
-That's it. Open a new chat, look for the Sukoon chip, and start asking.
+Open a new chat, look for the Sukoon chip, and start asking.
 
 ---
 
@@ -31,9 +32,7 @@ Add to your `claude_desktop_config.json` (or equivalent):
 }
 ```
 
-No environment variable needed — defaults to `https://mcp.sukoon.money`.
-
-Reload Claude Desktop. The Sukoon server shows as connected.
+No environment variable needed. Reload Claude Desktop and the Sukoon server shows as connected.
 
 ---
 
@@ -78,31 +77,30 @@ What SIF strategies does Edelweiss offer?
 ## Data sources
 
 - **NAV**: AMFI daily publish, updated every morning
-- **Holdings**: BSE/NSE monthly disclosures (portfolio data)
+- **Holdings**: BSE/NSE monthly disclosures
 - **Benchmarks**: NIFTY 50, NIFTY 100, NIFTY 200, NIFTY 500, NIFTY Midcap 150, NIFTY Smallcap 250, NIFTY Next 50, BSE Sensex, BSE 500, and more
 - **SIF strategies**: SEBI-registered Specialised Investment Funds (57 strategies)
 - **TER**: AMFI daily disclosures
 
 ---
 
-## Self-hosting
-
-The MCP HTTP endpoint and REST API are open source and run on Node.js + DuckDB reading Parquet from Cloudflare R2. See [AskMinto/minto-data-api](https://github.com/AskMinto/minto-data-api) for the full stack.
-
-```bash
-git clone https://github.com/AskMinto/minto-data-api
-cd minto-data-api/api
-npm install && npm run build
-SUKOON_API_URL=http://localhost:3001 npm start
-```
-
----
-
 ## Built by
 
-Sukoon is built by a team of alums from BITS Pilani, Nomura, Revolut, Samsung Research, and Sequoia Capital.
+<p>
+  <img src="assets/alum-bits.jpg" alt="BITS Pilani" height="32"/>
+  &nbsp;&nbsp;
+  <img src="assets/alum-nomura.png" alt="Nomura" height="28"/>
+  &nbsp;&nbsp;
+  <img src="assets/alum-revolut.png" alt="Revolut" height="26"/>
+  &nbsp;&nbsp;
+  <img src="assets/alum-samsung.jpg" alt="Samsung Research" height="28"/>
+  &nbsp;&nbsp;
+  <img src="assets/alum-sequoia.png" alt="Sequoia Capital" height="26"/>
+</p>
 
-We believe every retail investor in India deserves the same data quality their wealth manager has access to. Sukoon makes that data available through Claude, for free, forever.
+Sukoon is built by alums of BITS Pilani, Nomura, Revolut, Samsung Research, and Sequoia Capital.
+
+We believe every retail investor in India deserves the same data quality their wealth manager has. Sukoon makes that available through Claude, for free, forever.
 
 Join the advisory waitlist at [sukoon.money](https://sukoon.money).
 
