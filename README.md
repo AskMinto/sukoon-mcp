@@ -2,6 +2,7 @@
   <img src="assets/sukoon-logo.png" alt="Sukoon" width="64"/>
   <h1>Sukoon MCP</h1>
   <p><strong>Indian mutual fund data for Claude.</strong> 17 tools covering 14,000+ AMFI schemes, 20 years of daily NAV, risk metrics, holdings, benchmarks, and SIF strategies.</p>
+  <p>Leave a ⭐️</p>
   <p><a href="https://sukoon.money">sukoon.money</a> &nbsp;·&nbsp; No signup &nbsp;·&nbsp; No API key &nbsp;·&nbsp; Free for individuals</p>
 </div>
 
